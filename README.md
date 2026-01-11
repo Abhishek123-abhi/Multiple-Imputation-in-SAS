@@ -52,7 +52,7 @@ Implications:
 - Participants with very high or very low body weight may be less willing to report it. In this situation, the probability that weight is missing depends on the unobserved value of Y itself. In this case, the data are missing not at random (MNAR).
 
 
-__The Three Steps of Multiple Imputation__
+## The Three Steps of Multiple Imputation
 
 **1.Imputation:** Missing values are replaced multiple times to create several complete datasets. Each imputed value is drawn from a predictive distribution based on the observed data. In practice, 5 to 20 imputed datasets are commonly used.
 
