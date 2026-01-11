@@ -61,4 +61,11 @@ Implications:
 **3.Pooling:** The results from all analyses are combined using Rubin’s Rules, which appropriately account for both within-dataset variability and variability between imputations. The final output includes pooled estimates, standard errors, confidence intervals, and p-values.
 
 
-**Rubin's rule:** Rubin’s Rules work by averaging parameter estimates across all imputed datasets and then adjusting the variance to reflect uncertainty due to missing data. This adjustment is what makes multiple imputation statistically valid and superior to single imputation approaches.
+## Rubin's rule 
+Rubin’s Rules work by averaging parameter estimates across all imputed datasets and then adjusting the variance to reflect uncertainty due to missing data. This adjustment is what makes multiple imputation statistically valid and superior to single imputation approaches.
+
+
+## Multiple Imputation in SAS
+- Multiple imputation in SAS is a standard, regulatory-accepted approach for handling missing data by creating several complete datasets, analyzing each one, and then combining the results to obtain valid statistical inference.
+
+SAS implements multiple imputation primarily through PROC MI (imputation) and PROC MIANALYZE (pooling).
