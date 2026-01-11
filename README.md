@@ -15,7 +15,7 @@ Unlike single imputation methods such as mean substitution or last observation c
 
 <img width="684" height="673" alt="A-schematic-illustration-of-multiple-imputation-33-with-m-5" src="https://github.com/user-attachments/assets/a9d195db-2fb5-4970-afd8-bc5ed6d017b3" />
 
-<br>
+
 **Why Multiple Imputation Is Preferred?**
 Traditional single-value imputation methods tend to underestimate variability and can bias parameter estimates. Multiple imputation addresses these issues by:
 - Preserving the original sample size
@@ -23,4 +23,23 @@ Traditional single-value imputation methods tend to underestimate variability an
 - Producing valid standard errors and confidence intervals
 - Reflecting uncertainty due to missing data
 
+
+## Missing Data Mechanisms:
+**Missing Completely at Random (MCAR):** Data are Missing Completely at Random when the probability of missingness is independent of both observed and unobserved data.
+Implications:
+- Complete-case analysis yields unbiased estimates
+- Statistical power is reduced due to loss of data
+- Rarely holds in practical research settings
+
+**Missing at Random (MAR):** Data are Missing at Random when missingness depends only on observed data and not on the missing values themselves.
+Implications:
+- Most widely assumed mechanism in practice
+- Supports modern methods such as multiple imputation
+- Valid inference depends on including relevant covariates
+
+**Missing Not at Random (MNAR):** Data are Missing at Random when missingness depends only on observed data and not on the missing values themselves.
+Implications:
+- Standard MAR-based methods may be biased
+- Requires specialized modeling or sensitivity analyses
+- Common in longitudinal and clinical trial data
 
