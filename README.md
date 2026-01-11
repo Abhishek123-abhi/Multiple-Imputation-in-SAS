@@ -46,8 +46,12 @@ Implications:
 **Multiple imputation typically relies on the Missing at Random (MAR) assumption. Under MAR, the probability that a value is missing depends only on observed data and not on the missing value itself. While this assumption cannot be tested directly, it is often reasonable in well-designed studies when relevant covariates are included in the imputation model.**
 
 __The Three Steps of Multiple Imputation__
+
 **1.Imputation:** Missing values are replaced multiple times to create several complete datasets. Each imputed value is drawn from a predictive distribution based on the observed data. In practice, 5 to 20 imputed datasets are commonly used.
+
 **2.Analysis:** Each imputed dataset is analyzed using the same statistical model, such as a regression model, analysis of variance, or survival analysis. This ensures consistency across analyses.
+
 **3.Pooling:** The results from all analyses are combined using Rubin’s Rules, which appropriately account for both within-dataset variability and variability between imputations. The final output includes pooled estimates, standard errors, confidence intervals, and p-values.
+
 
 **Rubin's rule:** Rubin’s Rules work by averaging parameter estimates across all imputed datasets and then adjusting the variance to reflect uncertainty due to missing data. This adjustment is what makes multiple imputation statistically valid and superior to single imputation approaches.
