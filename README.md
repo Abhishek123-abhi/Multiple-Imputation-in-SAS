@@ -45,6 +45,13 @@ Implications:
 
 **Multiple imputation typically relies on the Missing at Random (MAR) assumption. Under MAR, the probability that a value is missing depends only on observed data and not on the missing value itself. While this assumption cannot be tested directly, it is often reasonable in well-designed studies when relevant covariates are included in the imputation model.**
 
+## A real-world example:
+**Suppose you are modeling body weight (Y) as a function of gender (X). Some participants choose not to report their weight, resulting in missing values for Y. There are three possible mechanisms that may explain this missingness.**
+- Some participants fail to report their weight for reasons unrelated to gender or their actual weight. In this case, the probability that weight is missing has no relationship with either X or Y. In this case, the data are missing completely at random (MCAR).
+- One gender may be less likely to disclose weight information. Here, the probability that weight is missing depends only on the observed variable X (gender) and not on the unobserved weight itself. In this case, the data are missing at random (MAR).
+- Participants with very high or very low body weight may be less willing to report it. In this situation, the probability that weight is missing depends on the unobserved value of Y itself. In this case, the data are missing not at random (MNAR).
+
+
 __The Three Steps of Multiple Imputation__
 
 **1.Imputation:** Missing values are replaced multiple times to create several complete datasets. Each imputed value is drawn from a predictive distribution based on the observed data. In practice, 5 to 20 imputed datasets are commonly used.
