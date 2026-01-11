@@ -69,3 +69,5 @@ Rubin’s Rules work by averaging parameter estimates across all imputed dataset
 - Multiple imputation in SAS is a standard, regulatory-accepted approach for handling missing data by creating several complete datasets, analyzing each one, and then combining the results to obtain valid statistical inference.
 
 SAS implements multiple imputation primarily through PROC MI (imputation) and PROC MIANALYZE (pooling).
+
+**To be continued in the program.......**
