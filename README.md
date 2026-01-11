@@ -13,6 +13,6 @@ Multiple imputation is a statistical technique in which each missing value is re
 
 Unlike single imputation methods such as mean substitution or last observation carried forward, multiple imputation accounts for the variability introduced by missing data.
 
-<img width="684" height="673" alt="A-schematic-illustration-of-multiple-imputation-33-with-m-5" src="https://github.com/user-attachments/assets/a9d195db-2fb5-4970-afd8-bc5ed6d017b3" />
+       <img width="684" height="673" alt="A-schematic-illustration-of-multiple-imputation-33-with-m-5" src="https://github.com/user-attachments/assets/a9d195db-2fb5-4970-afd8-bc5ed6d017b3" />
 
 
